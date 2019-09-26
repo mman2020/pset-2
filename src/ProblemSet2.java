@@ -194,7 +194,7 @@ public class ProblemSet2 {
          double radius = diameter / 2;
          double area = (Math.PI * Math.pow(radius, 2));
          double circumfrence = (Math.PI * diameter);
-     
+
          System.out.printf("\nAREA          : %,.2f", area);
          System.out.printf("\nCIRCUMFERENCE : %,.2f\n", circumfrence);
 
@@ -206,7 +206,19 @@ public class ProblemSet2 {
          * Given a length and width, print the area, perimeter, and diagonal of the
          * corresponding rectangle.
          */
+         System.out.print("\nEnter a length: ");
+         double length = in.nextDouble();
+         System.out.print("Enter a width: ");
+         double width = in.nextDouble();
 
+         double rectangleArea = (length * width);
+         double perimeter = ((2 * length) + (2 * width));
+         double diagonal = (Math.pow(length, 2) + Math.pow(width, 2));
+         diagonal = (Math.sqrt(diagonal));
+
+         System.out.printf("\nAREA      : %,.2f", rectangleArea);
+         System.out.printf("\nPERIMETER : %,.2f", perimeter);
+         System.out.printf("\nDIAGONAL  : %,.2f\n", diagonal);
 
 
         /*
