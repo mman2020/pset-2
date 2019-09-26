@@ -188,6 +188,15 @@ public class ProblemSet2 {
          *
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
+         System.out.print("\nEnter a diameter: ");
+         double diameter = in.nextDouble();
+
+         double radius = diameter / 2;
+         double area = (Math.PI * Math.pow(radius, 2));
+         double circumfrence = (Math.PI * diameter);
+     
+         System.out.printf("\nAREA          : %,.2f", area);
+         System.out.printf("\nCIRCUMFERENCE : %,.2f\n", circumfrence);
 
 
 
