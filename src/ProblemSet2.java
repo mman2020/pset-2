@@ -137,26 +137,26 @@ public class ProblemSet2 {
          * Given a number of inches, print the equivalent number of miles, yards, feet,
          * and inches.
          */
-         // final int INCH_MILE_CONVERSION = 63360;
-         // final int inchesInAYard = 36;
-         // int inchesInAFoot = 12;
-         //
-         // System.out.print("\nEnter a number of inches: ");
-         // int numInches = in.nextInt();
-         //
-         // int numMiles = numInches / inchesInAMile;
-         // numInches = numInches % inchesInAMile;
-         //
-         // int numYards = numInches / inchesInAYard;
-         // numInches = numInches % inchesInAYard;
-         //
-         // int numFeet = numInches / inchesInAFoot;
-         // numInches = numInches % inchesInAFoot;
-         //
-         // System.out.println("\nMILES  : " + numMiles);
-         // System.out.println("YARDS  : " + numYards);
-         // System.out.println("FEET   : " + numFeet);
-         // System.out.println("INCHES : " + numInches);
+         final int INCH_MILE_CONVERSION = 63360;
+         final int INCH_YARD_CONVERSION = 36;
+         final int INCH_FOOT_CONVERSION = 12;
+
+         System.out.print("\nEnter a number of inches: ");
+         int inchAmount = in.nextInt();
+
+         int amountMile = inchAmount / INCH_MILE_CONVERSION;
+         inchAmount = inchAmount % INCH_MILE_CONVERSION;
+
+         int amountYard = inchAmount / INCH_YARD_CONVERSION;
+         inchAmount = inchAmount % INCH_YARD_CONVERSION;
+
+         int amountFeet = inchAmount / INCH_FOOT_CONVERSION;
+         inchAmount = inchAmount % INCH_FOOT_CONVERSION;
+
+         System.out.println("\nMILES  : " + amountMile);
+         System.out.println("YARDS  : " + amountYard);
+         System.out.println("FEET   : " + amountFeet);
+         System.out.println("INCHES : " + inchAmount);
 
 
         /*
@@ -165,6 +165,21 @@ public class ProblemSet2 {
          * Given a number of centimeters, print the equivalent number of kilometers,
          * meters, and centimeters.
          */
+         final int CM_METER_CONVERSION = 100;
+         final int CM_KM_CONVERSION = 100000;
+
+         System.out.print("\nEnter a number of centimeters: ");
+         int cmAmount = in.nextInt();
+
+         int kmAmount = cmAmount / CM_KM_CONVERSION;
+         cmAmount = cmAmount % CM_KM_CONVERSION;
+
+         int mAmount = cmAmount / CM_METER_CONVERSION;
+         cmAmount = cmAmount % CM_METER_CONVERSION;
+
+         System.out.println("\nKILOMETERS  : " + kmAmount);
+         System.out.println("METERS      : " + mAmount);
+         System.out.println("CENTIMETERS : " + cmAmount);
 
 
 
