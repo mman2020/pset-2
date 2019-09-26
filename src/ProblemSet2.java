@@ -242,7 +242,19 @@ public class ProblemSet2 {
          *
          * Given a first, middle, and last name, print the corresponding initials.
          */
+         System.out.print("\nEnter your first name: ");
+         String firstNames = in.nextLine();
+         firstNames = in.nextLine();
+         System.out.print("Enter your middle name: ");
+         String middleNames = in.nextLine();
+         System.out.print("Enter your last name: ");
+         String lastNames = in.nextLine();
 
+         String initial1 = firstNames.substring(0, 1);
+         String initial2 = middleNames.substring(0, 1);
+         String initial3 = lastNames.substring(0, 1);
+
+         System.out.println("\n" + initial1 + initial2 + initial3);
 
 
         in.close();
