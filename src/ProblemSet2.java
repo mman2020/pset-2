@@ -226,7 +226,14 @@ public class ProblemSet2 {
          *
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
+         System.out.print("\nEnter a side length: ");
+         double sideLength = in.nextDouble();
 
+         double hexagonArea = Math.pow(sideLength, 2) * ((3 * Math.sqrt(3)) / 2);
+         double hexagonPerimeter = sideLength * 6;
+
+         System.out.printf("\nAREA      : %,.2f", hexagonArea);
+         System.out.printf("\nPERIMETER : %,.2f\n", hexagonPerimeter);
 
 
         /*
@@ -234,8 +241,14 @@ public class ProblemSet2 {
          *
          * Given a string, reverse and print the first and second halves of that string.
          */
+         System.out.print("\nEnter a string: ");
+         in.nextLine();
+         String string = in.nextLine();
 
+         String firstHalf = string.substring(0, (string.length() / 2));
+         String secondHalf = string.substring(string.length() / 2);
 
+         System.out.println("\n" + secondHalf + firstHalf);
 
         /*
          * Exercise 10.
@@ -243,7 +256,7 @@ public class ProblemSet2 {
          * Given a first, middle, and last name, print the corresponding initials.
          */
          System.out.print("\nEnter your first name: ");
-         String firstNames = in.nextLine();
+         String firstNames;
          firstNames = in.nextLine();
          System.out.print("Enter your middle name: ");
          String middleNames = in.nextLine();
